@@ -11,6 +11,9 @@
 
     <!-- Ícones do Bootstrap (Opcional, mas bom para UI) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Vite Assets -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body>
