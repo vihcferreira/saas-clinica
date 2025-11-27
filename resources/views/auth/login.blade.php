@@ -25,14 +25,16 @@
 
                     <!-- Campo Email -->
                     <div class="mb-3">
-                        <label for="email" class="form-label">Endereço de Email</label>
+                        <label for="email" class="form-label">Endereço de Emaillll</label>
                         <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}" required autofocus>
+                        <span class="error"></span>
                     </div>
 
                     <!-- Campo Senha -->
                     <div class="mb-3">
                         <label for="password" class="form-label">Senha</label>
                         <input type="password" class="form-control" id="password" name="password" required>
+                        <span class="error"></span>
                     </div>
 
                     <div class="d-grid">
