@@ -95,7 +95,7 @@ class PatientController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Patient $patient)
+    public function update(UpdatePatientRequest $request, Patient $patient)
     {
         $orgId = $this->getActiveOrgId();
 
@@ -107,7 +107,7 @@ class PatientController extends Controller
         $patient->update($request->validated());
 
         return redirect()->route('patients.index')
-                         ->with('success', 'Dados do paciente atualizados.');
+            ->with('success', 'Dados do paciente atualizados.');
     }
 
     /**
@@ -120,11 +120,11 @@ class PatientController extends Controller
         if ($patient->organization_id != $orgId) {
             abort(403);
         }
-        
+
         // Aqui entrará a Policy "delete" depois, mas o escopo já protege o acesso cruzado
         $patient->delete();
 
         return redirect()->route('patients.index')
-                         ->with('success', 'Paciente removido.');
+            ->with('success', 'Paciente removido.');
     }
 }
