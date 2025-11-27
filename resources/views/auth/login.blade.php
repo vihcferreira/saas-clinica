@@ -25,7 +25,7 @@
 
                     <!-- Campo Email -->
                     <div class="mb-3">
-                        <label for="email" class="form-label">Endereço de Emaillll</label>
+                        <label for="email" class="form-label">Endereço de Email</label>
                         <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}" required autofocus>
                         <span class="error"></span>
                     </div>

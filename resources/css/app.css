@@ -10,12 +10,12 @@
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-body {
-    background-color: red;
+.mb-3.invalid .form-label {
+    color: #eb4747;
+}
+
+.mb-3.invalid .form-control {
+    border: 2px solid #eb4747;
 }
 
 
-.card-header {
-    background-color: green;
-    color: orange;
-}
